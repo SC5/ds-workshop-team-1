@@ -5,5 +5,5 @@ import Heading from '.'
 
 storiesOf('Heading', module)
   .add('index', () => (
-    <Heading centered={ true }>Headingi</Heading>
+    <Heading centered={ true } sub={ false }>Headingi</Heading>
   ))
