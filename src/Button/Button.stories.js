@@ -10,6 +10,9 @@ import Icon from 'Icon'
 /* The component to document */
 import Button from '.';
 
+const buttonColor = 'rgb(2, 26, 114)'
+const buttonColorInverted = 'rgb(255, 255, 255)'
+
 storiesOf('Button', module)
   .add('index',
     withInfo()(() => {
@@ -19,18 +22,18 @@ storiesOf('Button', module)
             <Button onClick={function(){ alert('You clicked!')}}>I am just a button</Button>
           </Box>
           <Box>
-            <Button color='#1b8ceb' textColor="#fff" href="http://sc5.io">I am a link button</Button>
-            <Button color='#1b8ceb' textColor="#fff" disabled href="http://sc5.io">Disabled button with link</Button>
+            <Button color={buttonColor} href="http://sc5.io">I am a link button</Button>
+            <Button color={buttonColor} disabled href="http://sc5.io">Disabled button with link</Button>
           </Box>
           <Box>
-            <Button color='#00d1b2' textColor="#fff" size='1rem'>
+            <Button color={buttonColor} size='1rem'>
               <Icon name='stack-overflow' />
                Button with Icon
             </Button>
           </Box>
           <Box>
-            <Button color='#000' textColor="#fff" label='2048'>Like</Button>
-            <Button color='#00d1b2' textColor="#fff" label='2048'>Like</Button>
+            <Button color={buttonColor} label='2048'>Like</Button>
+            <Button color={buttonColor} label='2048'>Like</Button>
           </Box>
         </div>
       )
@@ -40,29 +43,10 @@ storiesOf('Button', module)
       return (
         <div>
           <Box>
-            <Button>Normal</Button>
-            <Button color='#1b8ceb' textColor="#fff">Primary</Button>
-            <Button color='#00d1b2' textColor="#fff">Success</Button>
-            <Button color='#e91e63' textColor="#fff">Danger</Button>
-            <Button color='#888888' textColor="#fff">Gray</Button>
-            <Button color='#888888' textColor="#fff" tone={2}>Light</Button>
-            <Button color='#000' textColor="#fff">Black</Button>
+            <Button color={buttonColor}>Button</Button>
           </Box>
-          <Box color='#00d1b2'>
-            <Button as='div' isInverted>Normal</Button>
-            <Button color='#1b8ceb' textColor="#fff" isInverted>Primary</Button>
-            <Button color='#00d1b2' textColor="#fff" isInverted>Success</Button>
-            <Button color='#e91e63' textColor="#fff" isInverted>Danger</Button>
-            <Button color='#888888' textColor="#fff" isInverted>Gray</Button>
-            <Button color='#888888' textColor="#fff" tone={2} isInverted>Light</Button>
-            <Button color='#000' textColor="#fff" isInverted>Black</Button>
-          </Box>
-          <Box>
-            <Button color='#1b8ceb' textColor="#fff" isOutlined>Primary</Button>
-            <Button color='#00d1b2' textColor="#fff" isOutlined>Success</Button>
-            <Button color='#e91e63' textColor="#fff" isOutlined>Danger</Button>
-            <Button color='#888888' textColor="#fff" isOutlined>Grayscale</Button>
-            <Button color='#000' textColor="#fff" isOutlined>Black</Button>
+          <Box color='#070723' >
+            <Button color={buttonColorInverted}>Button inverted</Button>
           </Box>
         </div>
       )
@@ -71,11 +55,11 @@ storiesOf('Button', module)
     withInfo()(() => {
       return (
         <Box>
-          <Button color='#1b8ceb' textColor="#fff" size='0.60rem'>Tiny</Button>
-          <Button color='#00d1b2' textColor="#fff" size='0.785rem'>Small</Button>
-          <Button color='#e91e63' textColor="#fff" size='1rem'>Normal</Button>
-          <Button color='#888888' textColor="#fff" size='1.5rem'>Large</Button>
-          <Button color='#000' textColor="#fff" size='2.0rem'>XLarge</Button>
+          <Button color='#1b8ceb' size='0.60rem'>Tiny</Button>
+          <Button color='#00d1b2' size='0.785rem'>Small</Button>
+          <Button color='#e91e63' size='1rem'>Normal</Button>
+          <Button color='#888888' size='1.5rem'>Large</Button>
+          <Button color='#000' size='2.0rem'>XLarge</Button>
         </Box>
       )
   }))
@@ -83,15 +67,15 @@ storiesOf('Button', module)
     withInfo()(() => {
       return (
         <Box>
-          <Button color='#1b8ceb' textColor="#fff" size='1rem'>
+          <Button color='#1b8ceb' size='1rem'>
             <Icon name='star' />
             Some text
           </Button>
-          <Button color='#00d1b2' textColor="#fff" size='0.785rem' isOutlined>
+          <Button color='#00d1b2' size='0.785rem' isOutlined>
             <Icon name='star' />
             Some text
           </Button>
-          <Button color='#888888' textColor="#fff" tone={2} size='1rem' isIcon>
+          <Button color='#888888' tone={2} size='1rem' isIcon>
             <Icon name='stack-overflow' />
           </Button>
         </Box>
