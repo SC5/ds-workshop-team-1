@@ -44,4 +44,8 @@ export const FuturaBold = styled.p`
 
 export const Lato = styled.p`
   font-family: lato;
+<<<<<<< HEAD
 `
+=======
+`
+>>>>>>> 0a85e790774bb2454cc27d4dc01a531f127e34e0

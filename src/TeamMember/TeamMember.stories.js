@@ -3,13 +3,13 @@ import { storiesOf } from '@storybook/react'
 
 import TeamMember from '.'
 
-const avatar = require('../../assets/avatar.jpg')
+const avatar = require('../../assets/avatar.jpg');
 
 storiesOf('TeamMember', module)
   .add('index', () => (
     <TeamMember
-      name="Lohi-Vote"
-      title="UX Guru"
-      avatar={avatar}
-    />
+      name='Jokke'
+      title='Full Stack Designer'
+      avatar={ avatar }
+      />
   ))
