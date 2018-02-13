@@ -17,24 +17,25 @@ const isIcon = ({ isIcon }) => {
 /* Default styles for all the buttons */
 export const Button = styled.div`
   font-family: ${p => 'BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Helvetica Neue", "Helvetica", "Arial", sans-serif'};
-  font-weight: 400;
+  font-weight: 500;
   height: ${p => '2.40em'};
   display: inline-flex;
   align-items: center;
   justify-content: center;
   padding: 0px 1.0em;
+  text-transform: uppercase;
   cursor: pointer;
   outline: none;
-  border: 1px solid;
-  border-color: transparent;
+  border: 2px solid;
+  border-color: ${p => p.color};
   border-radius: ${p => '3px'};
+  background-color: transparent;
   box-sizing: border-box;
   line-height: 1.5;
   position: relative;
   user-select: none;
   text-decoration: none;
-  background-color: ${p => p.color};
-  color: ${p => p.textColor};
+  color: ${p => p.color};
   font-size: ${p => p.size ? p.size : '1rem'};
   &:not(:last-child) {
     margin: 0 0.25em 0 0;
