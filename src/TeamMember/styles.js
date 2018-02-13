@@ -20,3 +20,22 @@ export const Title = styled.h3`
   margin: 0;
   margin-top: 20px;
 `
+
+export const IconList = styled.ul`
+  color: #747d88;
+  font-size: 16px;
+  margin: 0;
+  margin-top: 20px;
+  padding: 0;
+  list-style: none;
+`
+
+export const IconListItem = styled.li`
+  display: inline-block;
+  margin-right: 15px;
+`
+
+export const IconLink = styled.a`
+  color: #747d88;
+  text-decoration: none;
+`

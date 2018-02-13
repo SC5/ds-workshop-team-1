@@ -4,7 +4,7 @@
   "description": "Styled-components library setup (copied from React Components used at @Coderbox)",
   "main": "lib/my-awesome-library.js",
   "scripts": {
-    "prepare": "yarn build",
+    "prepare": "npm run build",
     "build": "webpack --env production",
     "start": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
